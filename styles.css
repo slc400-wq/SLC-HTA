@@ -1,0 +1,260 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://wallpaperaccess.com/full/1567666.png') center/cover fixed;
+    color: #e0e0e0;
+    margin: 0;
+    overflow-x: hidden;
+    transition: background-color 0.5s ease;
+}
+
+/* Navbar */
+.menu-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 110;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: rgba(26, 26, 26, 0.9);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.navbar.active {
+    left: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 50px 0 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 15px;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+    padding-left: 20px;
+    background-color: #2563eb;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 2rem;
+    color: white;
+    background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)),
+        url('https://wallpaperaccess.com/full/1567666.png') center/50% fixed;
+    transition: background 0.5s ease;
+}
+
+.header h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.header h1:hover {
+    transform: translateY(-10px);
+    color: #2563eb;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.header p:hover {
+    opacity: 0.8;
+}
+
+.btn {
+    background: #2563eb;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections */
+section {
+    padding: 6rem 2rem;
+    background: rgba(26, 26, 26, 0.8);
+    color: #e0e0e0;
+    margin: 2rem auto;
+    border-radius: 15px;
+    max-width: 1200px;
+    transition: background 0.3s ease;
+}
+
+section:hover {
+    background: rgba(128, 128, 128, 0.8);
+}
+
+/* Core Values Section */
+#cores {
+    padding: 6rem 2rem;
+    background: rgba(26, 26, 26, 0.8);
+    color: #e0e0e0;
+    margin: 2rem auto;
+    border-radius: 15px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#cores .core-values-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem;
+    border-radius: 15px; /* Added rounded corners to the image */
+}
+
+/* Core Value Content */
+.core {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: 15px; /* Added rounded corners to images */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.section-image:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+
+/* Images */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.section-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.section-image:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.footer:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        padding-top: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-image {
+        max-width: 100%;
+    }
+
+    #cores .core-values-image {
+        max-width: 100%; /* Ensures it scales on smaller screens */
+    }
+
+    /* Core content responsiveness */
+    #cores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .core {
+        width: 80%; /* Make core boxes more compact on smaller screens */
+    }
+
+    .core h3 {
+        font-size: 1.6rem;
+    }
+
+    .core p {
+        font-size: 1rem;
+    }
+}
